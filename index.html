@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nthabiseng Nonjoli - Online CV</title>
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles to override Bootstrap defaults */
+        body {
+            background: #f4f4f4; /* Light grey background for the whole page */
+        }
+        .bio img {
+            border-radius: 50%; /* Circular image for profile photo */
+            width: 150px; /* Fixed width for profile photo */
+            height: 150px; /* Fixed height for profile photo */
+            margin-bottom: 20px; /* Space below the profile photo */
+        }
+        .container {
+            padding-top: 20px; /* Space at the top of the container */
+        }
+        .contact-info a {
+            color: #333333; /* Dark text color for contact links */
+            text-decoration: none; /* No underline for contact links */
+        }
+        .contact-info a:hover {
+            text-decoration: underline; /* Underline contact links on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section with a dark background and white text -->
+    <header class="bg-dark text-white text-center py-4 mb-4">
+        <h1>Nthabiseng Nonjoli</h1>
+    </header>
+
+    <!-- Main content container with Bootstrap grid layout -->
+    <div class="container">
+        <div class="row">
+            <!-- Bio section -->
+            <div class="col-lg-4">
+                <div class="bio text-center bg-white p-4 rounded shadow-sm">
+                    <!-- Profile image -->
+                    <img src="path-to-your-image.jpg" alt="Nthabiseng Nonjoli">
+                    <h2>About Me</h2>
+                    <p>My name is Nthabiseng, I am an aspiring software developer with a passion for coding. 
+                        I am seeking an entry-level developer position. 
+                        I’m motivated by problem-solving and am always looking for a challenge.</p>
+                    <p>I thrive on challenges and enjoy working in dynamic environments 
+                        where I can apply my skills and continue learning. 
+                        My ultimate goal is to grow in the tech space.</p>
+                </div>
+            </div>
+
+            <!-- Skills section -->
+            <div class="col-lg-4">
+                <div class="skills bg-white p-4 rounded shadow-sm">
+                    <h2>Skills and Competencies</h2>
+                    <ul class="list-unstyled">
+                        <li>Communication</li>
+                        <li>Problem Solving</li>
+                        <li>Analytical Thinking</li>
+                        <li>Multitasking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education and work experience sections -->
+            <div class="col-lg-4">
+                <!-- Education section -->
+                <div class="education bg-white p-4 rounded shadow-sm mb-4">
+                    <h2>Education</h2>
+                    <p><strong>BSc Biology</strong> - UWC (2021)</p>
+                </div>
+
+                <!-- Work Experience section -->
+                <div class="work-experience bg-white p-4 rounded shadow-sm">
+                    <h2>Corporate Health</h2>
+                    <p><strong>Clinical Research</strong> - Aspen (2021 - 2023)</p>
+                    <p> • Assisting the clinical trial team with running multiple trials in accordance with
+                        ICH-GCP guidelines, each trial's protocol, local legal requirements, European,
+                        FDA, and other international guidelines.
+                        • Assisting with ensuring local audit and inspection readiness.
+                        • Reviewing each subject's site visit and ensuring completeness and high quality
+                        of information in each file prior to capturing the information on the relevant
+                        system.
+                        • Assisting the Study Coordinators with source document preparation and Site
+                        File filling.
+                        • Maintaining familiarity with current industry practices, regulatory requirements
+                        and guidelines that affect clinical trials.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact information section -->
+        <div class="contact-info bg-white p-4 rounded shadow-sm mb-4">
+            <h2>Contact Information</h2>
+            <p>Phone: <strong>072 885 5569</strong></p>
+            <p>Email: <a href="mailto:nonjolinthabiseng@gmail.com">nonjolinthabiseng@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">nthabiseng-nonjoli</a></p>
+            <!-- Add other social media links here if applicable -->
+        </div>
+
+        <!-- Search form -->
+        <form action="/search" method="GET" class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>Search</h2>
+            <div class="form-group">
+                <input type="text" name="query" class="form-control" placeholder="Search...">
+            </div>
+            <button type="submit" class="btn btn-dark">Search</button>
+        </form>
+
+        <!-- Contact form -->
+        <form action="/contact" method="POST" class="bg-white p-4 rounded shadow-sm">
+            <h2>Contact Me</h2>
+            <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+        </form>
+    </div>
+
+    <!-- JavaScript libraries for Bootstrap functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
